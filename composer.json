@@ -1,0 +1,17 @@
+{
+    "name": "pferreirafabricio/php-telegram-messenger",
+    "description": "A simple bot to send messages when something goes wrong",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabrício Pinto Ferreira",
+            "email": "pferreirafabricio@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    }
+}
