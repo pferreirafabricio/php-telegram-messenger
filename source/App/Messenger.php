@@ -6,7 +6,7 @@ namespace Source\App;
 
 use TelegramBot\Api\BotApi;
 
-class Notify
+class Messenger
 {
     /**
      * Send an alert message
@@ -14,7 +14,7 @@ class Notify
      * @param string $message
      * @return bool
      */
-    public function sendAlertMessage(string $message): bool
+    public static function sendAlertMessage(string $message): bool
     {
         $botApi = new BotApi($_ENV['CONF_TELEGRAM_BOT_TOKEN']);
         

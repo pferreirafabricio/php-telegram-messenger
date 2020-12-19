@@ -1,12 +1,10 @@
 <?php
 
-use Source\App\Notify;
+use Source\App\UpTimeChecker;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$messenger = new Notify();
-
-$messenger->sendAlertMessage('Olá mundo');
+(new UpTimeChecker)->check($_ENV['CONF_CHECK_URL']);
