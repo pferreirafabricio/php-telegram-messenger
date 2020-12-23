@@ -19,7 +19,7 @@ CONF_CHECK_URL=""
 composer install
 ```
 
-3. Run the script
+5. Run the script
 ```php
 php index.php
 ```
